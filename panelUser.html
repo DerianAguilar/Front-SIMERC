@@ -115,7 +115,7 @@ fetch("http://localhost:8080/usuario/listar-recordatorio/" + email, {
 
       data.forEach(function (dato) {
         var fila = document.createElement("tr");
-        fila.innerHTML = `<td>${dato.titulo}</td>
+        fila.innerHTML = `<td><b>${dato.titulo}</b></td>
                       <td>${dato.desc}</td>`;
 
         tbody.appendChild(fila);
