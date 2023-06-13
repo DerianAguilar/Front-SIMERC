@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
-  background-image: linear-gradient(135deg, #ae4383 10%, #d10707 100%);
+  /* background-image: linear-gradient(135deg, #ae4383 10%, #d10707 100%); */
+  background-color: #1f2126;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -91,7 +92,7 @@ body {
   border: 0;
   outline: 0;
   box-shadow: 0px 4px 20px 0px #7c0408a6;
-  background-image: linear-gradient(135deg, #7c0408a6 10%, #ad1414 100%);
+  /* background-image: linear-gradient(135deg, #7c0408a6 10%, #ad1414 100%); */
 }
 
 label {
