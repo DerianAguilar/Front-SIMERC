@@ -52,6 +52,8 @@ function iniciosesion() {
       // Mostrar el objeto JSON en el DOM
     })
     .catch((error) => {
+
+      alert("Credenciales invalidas")
       console.error("Error:", error);
     });
 }

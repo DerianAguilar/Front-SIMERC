@@ -62,7 +62,6 @@ function registrarAs(){
   var pass = document.getElementById('contraseña').value;
   var passEmail = document.getElementById('conEmail').value;
   var rol = document.getElementById('rol').value;
-  var correo = document.getElementById('emailAdm').value;
 
   var data = {
     tipoDocumento: tDocu,
@@ -75,7 +74,7 @@ function registrarAs(){
     pass: pass,
     passwordEmail: passEmail,
     rols: rol,
-    correo: correo
+    correo: localStorage.getItem('email')
   };
 
   //let token = "Bearer " + localStorage.getItem("token");
@@ -92,6 +91,7 @@ function registrarAs(){
     .then((respuesta) => {
       // Hacer algo con la respuesta recibida
       alert("registro exitoso");
+      window.location.href="panelAdmin.html";
 
       
       // Mostrar el objeto JSON en el DOM
